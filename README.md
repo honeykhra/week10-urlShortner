@@ -17,6 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ![plot](./screens/screen4.png)
 ![plot](./screens/screen5.png)
 
-
 https://user-images.githubusercontent.com/61749076/203767010-9c5d15c2-5d9a-430e-aff8-27bb755fc18d.mp4
-

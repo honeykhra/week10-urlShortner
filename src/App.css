@@ -261,7 +261,7 @@ p {
   line-height: 2rem;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   text-align: left;
 }
 
@@ -271,7 +271,7 @@ p {
   justify-content: space-evenly;
 }
 
-.footer ul{
+.footer ul {
   margin: 0;
 }
 
@@ -323,4 +323,337 @@ p {
   justify-content: center;
   align-items: center;
   margin: 2rem;
+}
+
+/* Mobile ui */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .left-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-items li a {
+    padding-right: 1rem;
+    color: #898989;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .left-items li img {
+    height: 2.5rem;
+  }
+
+  .right-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-items li {
+    color: #898989;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .active {
+    width: 100%;
+    color: #fff;
+    background: #2bd0d0;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    padding: 0 1rem;
+  }
+
+  .hero .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .left h1 {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: 0 2rem;
+    letter-spacing: -0.1rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #454545;
+  }
+  .hero .left p {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #6b6a6a;
+    line-height: 2rem;
+  }
+  .hero .left button {
+    border: none;
+    color: white;
+    background-color: #2bd0d0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .hero .right {
+    width: 100%;
+  }
+  .hero .right img {
+    height: 90vw;
+  }
+
+  /* Url Input */
+  .urlInput {
+    padding: 0;
+    margin: 6rem 0rem 0 1rem;
+    width: 90vw;
+  }
+  .urlInput .img {
+    position: absolute;
+    margin: 0;
+    width: 90vw;
+    height: 20vh;
+    border-radius: 0.5rem;
+    background-color: #7b6ba7;
+    z-index: -1;
+  }
+  .urlInput .content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+  }
+  .urlInput .content input {
+    width: 80%;
+    padding: 1rem 1rem;
+    margin: 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .urlInput .content button {
+    margin-top: 1rem;
+    width: 90%;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #ece9e9;
+    background-color: #2bd0d0;
+    font-weight: 600;
+  }
+
+  /* Statistics */
+  .statistics {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .statistics h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #454545;
+    font-size: 2rem;
+  }
+  .statistics p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .round {
+    background: #382f50;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards p {
+    width: 80%;
+  }
+  .card {
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card2 {
+    margin-top: 0rem;
+  }
+
+  .cards .card3 {
+    margin-top: 0rem;
+    margin-bottom: 23rem;
+  }
+  .span1 {
+    background: #2bd0d0;
+    height: 50px;
+    width: 10px;
+    margin-top: 0rem;
+    z-index: -1;
+  }
+
+  .span2 {
+    background: #2bd0d0;
+    height: 50px;
+    width: 10px;
+    margin-top: 0rem;
+    z-index: -1;
+  }
+
+  /* Boost */
+
+  .boost {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boost img {
+    margin-top: 5rem;
+    z-index: -1;
+    background: #39324e;
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .boost h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: -13rem;
+  }
+  .boost button {
+    color: #fff;
+    background-color: #2bd0d0;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-weight: 600;
+  }
+
+  /* Footer */
+
+  .footer {
+    background: #1f1b29;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .footer .logo {
+    filter: invert(100%);
+    margin-right: 0;
+    margin-top: 4rem;
+  }
+
+  .footer .sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .section {
+    padding: 0;
+    line-height: 2rem;
+  }
+  .footer .section ul {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .footer .socialIcons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 4rem 0;
+    font-size: 1.5rem;
+  }
+
+  /* GetShortUrl */
+  .getshorturlcontainer {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: #917ec4;
+    color: #d9d5e4;
+  }
+
+  .getshorturl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #16131d;
+    padding: 1rem;
+    max-width: 90vw;
+  }
+
+  .getshorturl .original-link {
+    width: 80vw;
+    display: flex;
+   
+  }
+
+  .getshorturl .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .getshorturl h2 {
+    font-weight: 400;
+    font-size: 0.9rem;
+    max-width: 80vw;
+  }
+
+  .getshorturl button {
+    width: 80vw;
+    color: #fff;
+    background-color: #39324e;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    margin-left: 0;
+  }
+  .getshorturl .right h2 {
+    color: #c3eaea;
+  }
+
+  /* Loader */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
 }

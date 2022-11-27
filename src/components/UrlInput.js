@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import urlInputImage from "../images/bg-shorten-desktop.svg";
+import urlInputImageMobile from "../images/bg-shorten-mobile.svg";
 import GetShortUrl from "./GetShortUrl";
 import axios from "axios";
 import { v4 as uuidV4 } from "uuid";
@@ -35,6 +36,7 @@ const UrlInput = () => {
 
   return (
     <div className="urlInput">
+      <img src={urlInputImageMobile} alt="" className="imgmobile" />
       <img src={urlInputImage} alt="" className="img" />
       <form className="content" onSubmit={onButtonEnter}>
         <input

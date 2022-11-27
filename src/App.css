@@ -107,7 +107,11 @@ p {
   margin-top: 5rem;
   width: 90vw;
 }
+.urlInput .imgmobile {
+  display: none;
+}
 .urlInput .img {
+  display: block;
   position: absolute;
   margin: 0;
   width: 90vw;
@@ -210,7 +214,11 @@ p {
   justify-content: center;
 }
 
-.boost img {
+.boost .imgmobile {
+  display: none;
+}
+.boost .img {
+  display: block;
   z-index: -1;
   background: #39324e;
   position: absolute;
@@ -406,7 +414,7 @@ p {
     width: 100%;
   }
   .hero .right img {
-    height: 90vw;
+    height: 80vw;
   }
 
   /* Url Input */
@@ -415,7 +423,8 @@ p {
     margin: 6rem 0rem 0 1rem;
     width: 90vw;
   }
-  .urlInput .img {
+  .urlInput .imgmobile {
+    display: block;
     position: absolute;
     margin: 0;
     width: 90vw;
@@ -423,6 +432,9 @@ p {
     border-radius: 0.5rem;
     background-color: #7b6ba7;
     z-index: -1;
+  }
+  .urlInput .img {
+    display: none;
   }
   .urlInput .content {
     margin-top: 1rem;
@@ -534,14 +546,17 @@ p {
     justify-content: center;
   }
 
-  .boost img {
-    margin-top: 5rem;
+  .boost .imgmobile {
+    display: block;
     z-index: -1;
     background: #39324e;
     position: absolute;
-    height: 70vh;
+    height: 45%;
     width: 100vw;
     overflow: hidden;
+  }
+  .boost .img {
+    display: none;
   }
   .boost h1 {
     color: #fff;
@@ -620,7 +635,6 @@ p {
   .getshorturl .original-link {
     width: 80vw;
     display: flex;
-   
   }
 
   .getshorturl .right {

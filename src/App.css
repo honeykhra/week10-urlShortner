@@ -428,7 +428,7 @@ p {
     position: absolute;
     margin: 0;
     width: 90vw;
-    height: 20vh;
+    height: 22vh;
     border-radius: 0.5rem;
     background-color: #7b6ba7;
     z-index: -1;
@@ -518,7 +518,7 @@ p {
 
   .cards .card3 {
     margin-top: 0rem;
-    margin-bottom: 23rem;
+    margin-bottom: 18rem;
   }
   .span1 {
     background: #2bd0d0;
@@ -551,7 +551,7 @@ p {
     z-index: -1;
     background: #39324e;
     position: absolute;
-    height: 45%;
+    height: 55%;
     width: 100vw;
     overflow: hidden;
   }

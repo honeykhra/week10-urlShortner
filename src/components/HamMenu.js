@@ -9,7 +9,9 @@ const Menu = ({ open, setOpen }) => {
       <a href="/">Resources</a>
       <span className="line"></span>
       <a href="/">Login</a>
-      <a href="/">Sign up</a>
+      <a href="/">
+        Sign up
+      </a>
     </div>
   );
 };

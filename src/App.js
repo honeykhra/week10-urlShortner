@@ -1,4 +1,5 @@
 import "./App.css";
+import HamburgerMenu from "./components/HamburgerMenu";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import UrlInput from "./components/UrlInput";
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <HamburgerMenu />
       <Hero />
       <UrlInput />
       <Statistics />
